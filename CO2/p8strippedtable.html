@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Striped Table</title>
+    <style>
+        #table{
+            width:100%;
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+        th{
+            padding: 20px 0;
+            text-align: left;
+            color: white;
+            background-color: #b22222;
+            border: 1px solid grey;
+        }
+        td{
+            padding: 8px;
+            border: 1px solid grey;
+            
+        }     
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+        tr:hover{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stripped Table</h1>
+    <table id="table">
+        <tr>
+            <th>Sl.no.</th>
+            <th>Admission no.</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>CHN23MC010</td>
+            <td>Arun</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CHN23MC018</td>
+            <td>Ben</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>CHN23MC029</td>
+            <td>Karan</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>CHN23MC040</td>
+            <td>Thejus</td>
+        </tr>
+    </table>
+</body>
+</html>
