@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>RegisterForm</title>
+<style>
+ td{
+    padding:10px;
+ }
+ table.t2 td{
+    padding:0;
+ }
+</style>
+</head>
+<body>
+<h1 align="center">STUDENT REGISTRATION FORM</h1>
+<form>
+<table align="center" border="1">
+ <tr>
+     <td>FIRST NAME</td>
+     <td><input type="text" name="fname" maxlength="30"></input> (max 30 characters)</td>
+ </tr>
+ <tr>
+     <td>LAST NAME</td>
+     <td><input type="text" name="lname" maxlength="30"></input> (max 30 characters)</td>
+ </tr>
+ <tr>
+     <td>DATE OF BIRTH</td>
+     <td><input type="date" name="dob"></input></td>
+ </tr>
+ <tr>
+     <td>EMAIL ID</td>
+     <td><input type="email" name="email" maxlength="30"></input></td>
+ </tr>
+ <tr>
+     <td>MOBILE NUMBER</td>
+     <td><input type="number" name="mobnum"></input> (10 digit number)</td>
+ </tr>
+ <tr>
+     <td>GENDER</td>
+     <td> Male <input type="radio" name="gender" value="M"></input> Female <input type="radio" name="gender" value="F"></input></td>
+ </tr>
+ <tr>
+     <td style="vertical-align:top">ADDRESS</td>
+     <td><textarea rows="4" cols="30" name="adress"></textarea></td>
+ </tr>
+ <tr>
+     <td>CITY</td>
+     <td><input type="text" name="city" maxlength="30"></input> (max 30 characters)</td>
+ </tr>
+ <tr>
+     <td>PINCODE</td>
+     <td><input type="number" name="pincode"></input> (6 digit number)</td>
+ </tr>
+ <tr>
+     <td>STATE</td>
+     <td><input type="text" name="state" maxlength="30"></input> (max 30 characters)</td>
+ </tr>
+ <tr>
+     <td>COUNTRY</td>
+     <td>
+         <select name="country" style="width:192px">
+         <option>India</option>
+         <option>Nepal</option>
+         <option>Sri Lanka</option>
+	 <option>Other</option>
+         </select>
+     </td>
+ </tr>
+ <tr>
+     <td style="vertical-align:top">HOBBIES</td>
+     <td>Drawing <input type="checkbox" name="hobby" value="drawing"></input>
+         Singing <input type="checkbox" name="hobby" value="singing"></input>
+         Dancing <input type="checkbox" name="hobby" value="dancing"></input>
+         Sketching <input type="checkbox" name="hobby" value="sketching"></input>
+	 <br>
+         Others <input type="checkbox" name="hobby" value="others"></input><input type="text" name="hobbyother" maxlength="30"></input>
+     </td>
+ </tr>
+ <tr>
+     <td style="vertical-align:top">QUALIFICATION</td>
+     <td>
+	<table class="t2">
+	  <tr>
+              <th>Sl.No.</th>
+     	      <th>Examination</th>
+     	      <th>Board</th>
+     	      <th>Percentage</th>
+     	      <th>Year of Passing</th>
+          </tr>
+	  <tr>
+              <td>1.</td>
+     	      <td>Class X</td>
+     	      <td><input type="text" name="boardx"></td>
+     	      <td><input type="text" name="percentx"></td>
+     	      <td><input type="text" name="yearofpassx"></td>
+          </tr>
+	  <tr>
+              <td>2.</td>
+     	      <td>Class XII</td>
+     	      <td><input type="text" name="boardxii"></td>
+     	      <td><input type="text" name="percentxii"></td>
+     	      <td><input type="text" name="yearofpassxii"></td>
+          </tr>
+	  <tr>
+              <td>3.</td>
+     	      <td>Graduation</td>
+     	      <td><input type="text" name="boardg"></td>
+     	      <td><input type="text" name="percentg"></td>
+     	      <td><input type="text" name="yearofpassg"></td>
+          </tr>
+	  <tr>
+              <td>4.</td>
+     	      <td>Masters</td>
+     	      <td><input type="text" name="boardm"></td>
+     	      <td><input type="text" name="percentm"></td>
+     	      <td><input type="text" name="yearofpassm"></td>
+          </tr>
+	  <tr align="center">
+              <td></td>
+     	      <td></td>
+     	      <td>(10 char max)</td>
+     	      <td>(upto 2 decimal)</td>
+     	      <td></td>
+          </tr>
+	</table>
+     </td>
+ </tr>
+ <tr>
+     <td>COURSES APPLIED FOR</td>
+     <td>MCA <input type="radio" name="course" value="mca">
+	 M.Tech <input type="radio" name="course" value="mtech">
+	 M.Sc <input type="radio" name="course" value="msc">
+	 Ph.D <input type="radio" name="course" value="phd">
+     </td>
+ </tr>
+ <tr>
+     <td>TYPE YOUR PASSWORD</td>
+     <td><input type="password" name="pass"></td>
+ </tr>
+ <tr>
+     <td>UPLOAD YOUR PHOTO</td>
+     <td><input type="file" name="photo"></td>
+ </tr>
+ <tr>
+     <td>DATE OF TC</td>
+     <td><input type="date" name="dotc"></td>
+ </tr>
+ <tr align="center">
+     <td colspan="4"><input type="submit" name="submit" value="Submit"><input type="reset" name="reset" value="Reset"></td>
+ </tr>
+
+</table>
+</form>
+</body>
+</html>
