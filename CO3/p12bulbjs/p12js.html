@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>BulbJs</title>
+</head>
+<body>
+
+<img src="off.png" id="bulb" alt="bulb">
+<button onclick="on()">On</button>
+<button onclick="off()">Off</button>
+    
+    <script>
+        function on(){
+           const img= document.getElementById('bulb');
+           img.src = "on.png";
+        }
+        function off(){
+           const img= document.getElementById('bulb');
+           img.src = "off.png";
+        } 
+        
+    </script>
+</body>
+</html>
